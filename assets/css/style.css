@@ -8,6 +8,10 @@ body {
     width: 100%;
     background-image: url(../images/home2.jpg);
 }
+.header-top{
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+}
 .header-top-left img {
     display: inline;
     margin-left: 20px;
@@ -19,6 +23,85 @@ body {
 }
 .container{
     width: 100%;
+}
+.nav-menu li a{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    
+}
+.nav-menu li a:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+.nav-menu li:hover > .sub-menu{ display: block}
+
+.nav-menu > li{
+    list-style-type: none;
+   display: inline-block;
+   padding-right: 18px;
+   position: relative;
+   margin-right: 32px;
+}
+.sub-menu{
+padding: 8px 0;
+background: #292929;
+position: absolute;
+z-index: 99;
+display:none;
+width: auto;
+white-space: nowrap;
+line-height: 24px;
+}
+.sub-menu li{
+    width: 200px;
+    overflow: hidden;
+    display: inline-flex;
+}
+.sub-menu-list li{
+    display: block;
+}
+.sub-menu-list li a{
+padding: 6px 24px;
+display: block;
+opacity: 0.5;
+}
+.nav-menu > li:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 11px;
+    content: "\e64b";
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #fff;
+}
+.sub-menu-list-dropdown{
+    width: 200px;
+    overflow: hidden;
+    display: none;
+}
+
+.label {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #47b475;
+    border-radius: 0;
+    padding: 6px 12px;
+    font-size: 10px;
+    vertical-align: middle;
+}.agency{
+    width: 50%;
+    float: left
 }
 .header-bottom{
     color: #fff;
