@@ -7,6 +7,8 @@ body {
 .header {
     width: 100%;
     background-image: url(../images/home2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 .header-top{
     border-bottom: 1px solid #fff;
@@ -87,6 +89,47 @@ opacity: 0.5;
     overflow: hidden;
     display: none;
 }
+.image-hover{
+    top: 40%;
+    z-index: 2;
+    position: absolute;
+    width:100%;
+    text-align: center;
+    display: none;
+   
+}
+.image-hover a{
+    color: #fff;
+    text-decoration: none; 
+}
+.image-hover h4{
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+.image-hover h6{
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+}
+
+.background-image:hover > .img-container{
+    opacity: 0.2;
+}
+.background-image:hover > .image-hover{
+    display: block;
+    transition: all linear 0.5s;
+    /* transition: 0.8s ease; */
+}
+
+.hover-background{
+    position: relative;
+    overflow: hidden;
+    background: #292929;
+}
 
 .label {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -109,8 +152,10 @@ opacity: 0.5;
     background-size: cover;
     background-position: 50% 50%;
 }
-.header-bottom h1{
-    font-size: 48px;
+.header-bottom h1 {
+        font-size: 72px;
+        line-height: 80px;
+        font-weight: 100;
 }
 .mb{
     margin: 0px 10px 25px 10px;
